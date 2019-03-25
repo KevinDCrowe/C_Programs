@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <math.h>
 
-#define q 9
-#define D 1024
+#define q 9 //Data scaling factor
+#define D 1024 //Size of target data
 
 
 d1filter(int a[3],int b[3],int x[D]) {
