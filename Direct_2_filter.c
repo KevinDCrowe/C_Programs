@@ -2,10 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define D 1024
-
-D2Filter(int a[3],int b[3],int x[D]){
-
+D2Filter(int a[3],int b[3],int x[]){
+D=sizeof(x)/sizeof(int);
 int v[3]={0};
 int *y=(int *)malloc(sizeof(int)*D);
 for(int i=0;i<D;i++){
