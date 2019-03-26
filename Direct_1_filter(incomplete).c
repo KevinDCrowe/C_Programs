@@ -9,9 +9,8 @@
 d1filter(int a[3],int b[3],int x[D]) {
 	//Allocates memory for the Accumulator
 	int *y = (int *)malloc(sizeof(int)*(D)); //output
-	int c[3] = { 0 }; //Input Buffer
-	int d[3] = { 0 }; //Accumulator Buffer
-	//Scales the filter coeffecients
+	
+	//Scales the input data
 	for (int i = 0; i < 3; i++) {
 		b[i] = pow(2, q)*b[i];
 	}
