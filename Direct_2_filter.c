@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define a1 10
 #define D 1024
 
 D2Filter(int a[3],int b[3],int x[D]){
