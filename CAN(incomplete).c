@@ -14,7 +14,9 @@ read(canH,canL){
 }
 
 CANr(){
-  
+   "init I/O pins"(return canL & canH)
+//A(0),B(1), or FD(2)
+int typ=0;
 CANt(){
   
  "init I/O pins"(return canL & canH)
@@ -48,7 +50,8 @@ for(int n=0;n<100;n++){
     //"Ack"
   }elseif(n>=8*num+38 && n<8*num+48){
     //"EoF"
-    Set(1);  
+    Set(1); 
+    
   }else{n=0}
 }  
 
